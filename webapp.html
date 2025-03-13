@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student details </title>
+</head>
+<body>
+     <h2> student details</h2>
+     <table border=5>
+         <tr>
+             <th>courseid</th><th>coursename</th>
+         </tr>
+        {% for row in rows %}
+         <tr>
+             <td>{{row[0]}}</td><td>{{row[1]}}</td>
+         </tr>
+         {% endfor %}
+     </table>
+</body>
+</html>
